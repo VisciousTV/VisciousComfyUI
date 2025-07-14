@@ -1,0 +1,9 @@
+# ---- core pins ----
+numpy==1.26.4            # numba & torchsafe, satisfies comfyui >=1.25
+numba==0.59.1            # supports numpy<2.2
+opencv-contrib-python-headless==4.10.0.82  # includes ximgproc.guidedFilter
+opencv-python-headless==4.10.0.82
+
+# anything known to be missing
+typed-ast        # for nunchaku lint
+packaging>=23.2  # some nodes rely on new packaging.version
